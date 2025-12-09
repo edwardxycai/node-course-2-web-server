@@ -37,7 +37,7 @@ app.use((req, res, next) => {
 // Serve static files from ./public
 app.use(express.static(__dirname + '/public'));
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
     // res.send({
