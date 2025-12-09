@@ -32,7 +32,8 @@ app.use((req, res, next) => {
     next();
 })
 app.use((req, res, next) => {
-    res.render('maintenance.hbs');
+    // res.render('maintenance.hbs');
+    next();
 })
 // Serve static files from ./public
 app.use(express.static(__dirname + '/public'));
